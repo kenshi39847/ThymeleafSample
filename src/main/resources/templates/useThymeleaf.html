@@ -15,5 +15,12 @@
 	</div>
 	<span th:text="1 > 10"></span>
 	<span th:text="太郎 == 太郎"></span>
+	<p th:text="${name} == '太郎'? '太郎さんです！':'太郎さんではありません。'"></p>
+	<div th:if="${name} == '太郎'">
+		<p>太郎さんです！</p>
+	</div>
+	<div th:unless="${name} == '花子'">
+		<p>花子さんではありません。</p>
+	</div>
 </body>
 </html>
